@@ -1,0 +1,654 @@
+{
+	"info": {
+		"_postman_id": "67ef9f1f-e8e6-13ec-691b-4e6bd6e4624b",
+		"name": "A-UCSD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "943fd465-6f0d-4a02-85fa-f80b7649383d",
+			"name": "Get Password",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://198.18.133.112/app/api/rest?opName=getRESTKey&user=admin&password=admin",
+					"protocol": "https",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "opName",
+							"value": "getRESTKey"
+						},
+						{
+							"key": "user",
+							"value": "admin"
+						},
+						{
+							"key": "password",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "e5d3a73f-32a9-407b-9b2b-71668785ea67",
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://198.18.133.112/app/api/rest?opName=userAPIGetMyLoginProfile",
+					"protocol": "https",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "opName",
+							"value": "userAPIGetMyLoginProfile"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "4481e202-fc99-4524-b493-52d589477674",
+			"name": "Get Catalogs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?opName=userAPIGetAllCatalogs&opData={}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "opName",
+							"value": "userAPIGetAllCatalogs"
+						},
+						{
+							"key": "opData",
+							"value": "{}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "6e1fe45e-893f-4a47-9d13-12dc16656a88",
+			"name": "getinputs-Tenant",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=catalog:userAPIGetCatalogInputDefinition&opData={param0:{\"catalogName\":\"Tenant Onboarding\"}}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"",
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "catalog:userAPIGetCatalogInputDefinition"
+						},
+						{
+							"key": "opData",
+							"value": "{param0:{\"catalogName\":\"Tenant Onboarding\"}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "519808b3-8a80-47ef-916e-68b13fcb9288",
+			"name": "workflow ACI Tenant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=userAPISubmitWorkflowServiceRequest&opData={param0:\"Tenant-Onboarding\",param1:{\"list\":[{\"name\":\"input_0_Tenant_Name217\",\"value\":\"DemoVideo\"},{\"name\":\"input_1_Tenant_Admin_Email61\",\"value\":\"demovideo@cisco.com\"},{\"name\":\"input_2_Tenant_Admin_Username174\",\"value\":\"demovideo\"},{\"name\":\"input_3_Tenant_Admin_Password786\",\"value\":\"C1sco12345\"}\n]},param2:-1}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "userAPISubmitWorkflowServiceRequest"
+						},
+						{
+							"key": "opData",
+							"value": "{param0:\"Tenant-Onboarding\",param1:{\"list\":[{\"name\":\"input_0_Tenant_Name217\",\"value\":\"DemoVideo\"},{\"name\":\"input_1_Tenant_Admin_Email61\",\"value\":\"demovideo@cisco.com\"},{\"name\":\"input_2_Tenant_Admin_Username174\",\"value\":\"demovideo\"},{\"name\":\"input_3_Tenant_Admin_Password786\",\"value\":\"C1sco12345\"}\n]},param2:-1}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "32d66924-91d2-43cc-a4fc-d6f71688717c",
+			"name": "getinputs-3-tierApp-L3-out-FW-LB",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=userAPIGetWorkflowInputs&opData={param0:\"APIC Container Setup\"}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"",
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "userAPIGetWorkflowInputs"
+						},
+						{
+							"key": "opData",
+							"value": "{param0:\"APIC Container Setup\"}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "3ddf3bc0-deb0-4eed-8bdf-a2f55123eee9",
+			"name": "Workflow 3 tier application + ASA FW + LB",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=userAPISubmitWorkflowServiceRequest&opData={param0:\"APIC Container Setup\",param1:{\"list\":[{\"name\": \"input_0_Container_Name601\",\"value\":\"LB-2\"},{\"name\": \"input_1_Container_Label810\",\"value\":\"\"},{\"name\":\"input_2_Tenant948\",\"value\":\"DemoVideo\"},{\n\"name\": \"input_3_Application_Container_Template5\",\"value\":\"L3-T1-LB-T2-T3\"},{ \"name\":\"input_4_No_of_Hosts_per_Tier96\",\"value\":\"\"}, {\"name\": \"input_5_User_Group650\",\"value\":\"\"},{\"name\": \"input_6_Enable_Disaster_Recovery668\",\"value\":\"false\"},{\"name\": \"input_7_Configure_Resource_Limit671\",\"value\":\"1\"},{\"name\": \"input_8_Number_of_vCPUs183\",\"value\":\"0\"}, {\"name\": \"input_9_Memory488\",\"value\":\"0.0\"}, {\"name\": \"input_10_Maximum_Storage_Limit6\",\"value\":\"-1.0\"},{\"name\": \"input_12_Maximum_Number_of_Full_width_Physical_Servers450\",\"value:\":\"-1\"},{\"name\": \"input_13_Enable_Network_Management833\",\"value\":\"true\"},{\"name\": \"input_14_Network_Throughput858\",\"value\":\"100M\"},{\"name\": \"input_16_Container_Role739\",\"value\":\"PRIMARY\"}\n]},param2:-1}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "userAPISubmitWorkflowServiceRequest"
+						},
+						{
+							"key": "opData",
+							"value": "{param0:\"APIC Container Setup\",param1:{\"list\":[{\"name\": \"input_0_Container_Name601\",\"value\":\"LB-2\"},{\"name\": \"input_1_Container_Label810\",\"value\":\"\"},{\"name\":\"input_2_Tenant948\",\"value\":\"DemoVideo\"},{\n\"name\": \"input_3_Application_Container_Template5\",\"value\":\"L3-T1-LB-T2-T3\"},{ \"name\":\"input_4_No_of_Hosts_per_Tier96\",\"value\":\"\"}, {\"name\": \"input_5_User_Group650\",\"value\":\"\"},{\"name\": \"input_6_Enable_Disaster_Recovery668\",\"value\":\"false\"},{\"name\": \"input_7_Configure_Resource_Limit671\",\"value\":\"1\"},{\"name\": \"input_8_Number_of_vCPUs183\",\"value\":\"0\"}, {\"name\": \"input_9_Memory488\",\"value\":\"0.0\"}, {\"name\": \"input_10_Maximum_Storage_Limit6\",\"value\":\"-1.0\"},{\"name\": \"input_12_Maximum_Number_of_Full_width_Physical_Servers450\",\"value:\":\"-1\"},{\"name\": \"input_13_Enable_Network_Management833\",\"value\":\"true\"},{\"name\": \"input_14_Network_Throughput858\",\"value\":\"100M\"},{\"name\": \"input_16_Container_Role739\",\"value\":\"PRIMARY\"}\n]},param2:-1}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "ed5f774e-4ffc-49b1-90c0-233146119855",
+			"name": "getinputs-3-tierApp-with-vmware-and-UCS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "3C770FB6E8094ECBB59305F3795B5F31"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=catalog:userAPIGetCatalogInputDefinition&opData={param0:{\"catalogName\":\"3 Tier App with VMware and UCS\"}}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "catalog:userAPIGetCatalogInputDefinition"
+						},
+						{
+							"key": "opData",
+							"value": "{param0:{\"catalogName\":\"3 Tier App with VMware and UCS\"}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "67acb0d9-9e2d-4f40-b910-323707979458",
+			"name": "workflow 3tier app",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=userAPISubmitWorkflowServiceRequest&opData={param0:\"Create 3 Tier Application - Virtual and Physical workloads\",param1:{\"list\":[{\"name\": \"input_0_Application_Name645723\",\"value\":\"DemoVideo\"},{\"\nname\": \"input_1_Number_of_Web_Tier_VMs74960\",\"value\":\"1\"},{\"name\": \"input_2_Number_of_App_Tier_VMs174729\",\"value\":\"1\"},{\"name\": \"input_6_Number_of_DB_Tier_SPs768341\",\"value\":\"1\"},{\"name\": \"input_7_Select_APIC_Tenant11269\",\"value\":\"dCloud_APIC@DemoVideo\"}]},param2:-1}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "userAPISubmitWorkflowServiceRequest"
+						},
+						{
+							"key": "opData",
+							"value": "{param0:\"Create 3 Tier Application - Virtual and Physical workloads\",param1:{\"list\":[{\"name\": \"input_0_Application_Name645723\",\"value\":\"DemoVideo\"},{\"\nname\": \"input_1_Number_of_Web_Tier_VMs74960\",\"value\":\"1\"},{\"name\": \"input_2_Number_of_App_Tier_VMs174729\",\"value\":\"1\"},{\"name\": \"input_6_Number_of_DB_Tier_SPs768341\",\"value\":\"1\"},{\"name\": \"input_7_Select_APIC_Tenant11269\",\"value\":\"dCloud_APIC@DemoVideo\"}]},param2:-1}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "5f373bd2-327e-45ec-b032-85c40be3c888",
+			"name": "workflow ACI Tenant copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=userAPISubmitWorkflowServiceRequest&opData={param0:\"Tenant-Onboarding\",param1:{\"list\":[{\"name\":\"input_0_Tenant_Name217\",\"value\":\"Demo5\"},{\"name\":\"input_1_Tenant_Admin_Email61\",\"value\":\"demo3@cisco.com\"},{\"name\":\"input_2_Tenant_Admin_Username174\",\"value\":\"demo5\"},{\"name\":\"input_3_Tenant_Admin_Password786\",\"value\":\"C1sco12345\"}\n]},param2:-1}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "userAPISubmitWorkflowServiceRequest"
+						},
+						{
+							"key": "opData",
+							"value": "{param0:\"Tenant-Onboarding\",param1:{\"list\":[{\"name\":\"input_0_Tenant_Name217\",\"value\":\"Demo5\"},{\"name\":\"input_1_Tenant_Admin_Email61\",\"value\":\"demo3@cisco.com\"},{\"name\":\"input_2_Tenant_Admin_Username174\",\"value\":\"demo5\"},{\"name\":\"input_3_Tenant_Admin_Password786\",\"value\":\"C1sco12345\"}\n]},param2:-1}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "6e4478ec-2251-4da1-b314-4ba540798b55",
+			"name": "Rollback-Task",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=userAPIRollbackWorkflow&opData={param0:33}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "userAPIRollbackWorkflow"
+						},
+						{
+							"key": "opData",
+							"value": "{param0:33}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "7e9b485c-473f-4eb6-bf6a-d619263cd5de",
+			"name": "See-All-Service-Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=userAPIGetServiceRequests&opData={}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "userAPIGetServiceRequests"
+						},
+						{
+							"key": "opData",
+							"value": "{}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "e0c770b9-214a-43b2-bb84-2686e603cd83",
+			"name": "See-Specific-Service-Request-details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=userAPIGetServiceRequestWorkFlow&opData={param0:72}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "userAPIGetServiceRequestWorkFlow"
+						},
+						{
+							"key": "opData",
+							"value": "{param0:72}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "ddfe32ec-3b6a-4dd7-a5a1-629b2e4dcf2c",
+			"name": "See-All-VMs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=userAPIGetAllVMs&opData={}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "userAPIGetAllVMs"
+						},
+						{
+							"key": "opData",
+							"value": "{}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "899d4629-a8dd-476d-8252-c06d7944be8a",
+			"name": "Get Application Container",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Cloupia-Request-Key",
+						"value": "1AF885F5320649B0B0CA06C9A4EF36CD"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://198.18.133.112/app/api/rest?formatType=json&opName=fenced:userAPIGetAllServiceContainers&opData={}",
+					"protocol": "http",
+					"host": [
+						"198",
+						"18",
+						"133",
+						"112"
+					],
+					"path": [
+						"app",
+						"api",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "formatType",
+							"value": "json"
+						},
+						{
+							"key": "opName",
+							"value": "fenced:userAPIGetAllServiceContainers"
+						},
+						{
+							"key": "opData",
+							"value": "{}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
